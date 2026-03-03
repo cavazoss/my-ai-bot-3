@@ -3,14 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Мой AI Бот</title>
+    <title>Мой ИИ Помощник</title>
     <style>
-        body, html { margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; background-color: #f0f2f5; }
-        iframe { width: 100%; height: 100vh; border: none; }
+        body { 
+            margin: 0; 
+            display: flex; 
+            justify-content: center; 
+            align-items: center; 
+            height: 100vh; 
+            background: #f4f7f9; 
+            font-family: sans-serif;
+        }
+        h1 { color: #333; }
     </style>
 </head>
 <body>
-    <!-- Твоя ссылка из Coze -->
-    <iframe src="https://www.coze.com"></iframe>
+    <h1>Добро пожаловать на мой сайт!</h1>
+
+    <!-- Скрипт чата Coze -->
+    <script src="https://sf-cdn.coze.com"></script>
+    <script>
+      new CozeWebSDK.WebChatClient({
+        config: {
+          bot_id: '7613003837405986821', // Твой ID бота
+        },
+        componentProps: {
+          title: 'AI Чат',
+        },
+      });
+    </script>
 </body>
 </html>
